@@ -1,17 +1,17 @@
 {
   "flare": true,
   "level1": 20,
-  "level2": 2.8,
-  "pressure1": 12.3,
-  "pressure2": 8.9,
-  "pressure3": 5.2,
+  "level2": 50,
+  "pressure1": 300,
+  "pressure2": 650,
+  "pressure3": 700,
   "valve1": true,
   "valve2": false,
   "valve3": true,
-  "valve4": [true, false, true],
+  "valve4": true,
   "valve5": true,
   "pump1": true,
   "pump2": false,
-  "pump3": [true, false],
+  "pump3": false,
   "preheater": true
 }
