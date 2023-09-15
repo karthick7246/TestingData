@@ -1,6 +1,6 @@
 {
   "flare": true,
-  "level1": 3.5,
+  "level1": 20,
   "level2": 2.8,
   "pressure1": 12.3,
   "pressure2": 8.9,
