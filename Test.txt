@@ -1,5 +1,5 @@
 {
-  "flare": 0,
+  "flare": 1,
   "level1": 20,
   "level2": 50,
   "pressure1": 1000,
