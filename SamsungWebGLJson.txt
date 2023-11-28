@@ -13,20 +13,6 @@
 			"url": "https://s3.ap-south-1.amazonaws.com/metavtmt.com/ModelViwer/Mobile2.zip",
 			"pay": "0",
 			"image": "https://karthick7246.github.io/TestingData/F2.png",
-		},
-		{
-			"id": "2",
-			"name": "M2",
-			"url": "https://s3.ap-south-1.amazonaws.com/metavtmt.com/ModelViwer/Mobile3.zip",
-			"pay": "0",
-			"image": "https://karthick7246.github.io/TestingData/Sofa3.png",
-		},
-		{
-			"id": "3",
-			"name": "M2",
-			"url": "https://s3.ap-south-1.amazonaws.com/metavtmt.com/ModelViwer/Mobile4.zip",
-			"pay": "0",
-			"image": "https://karthick7246.github.io/TestingData/Sofa3.png",
 		}
 		
 	]
