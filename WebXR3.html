@@ -1,0 +1,16 @@
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+<model-viewer src="./assets/Cassini_Combine.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" autoplay style="width: 800px; height: 600px;">
+    <button class="Hotspot" slot="hotspot-1" data-surface="0 1 4368 4369 4370 0.749 0.030 0.221" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Stick</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
