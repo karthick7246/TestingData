@@ -1,8 +1,8 @@
 {
   "color": {
-    "r": 233,
-    "g": 79,
-    "b": 55
+    "r": 0,
+    "g": 0,
+    "b": 0
   },
   "textureURL": "https://example.com/your-texture.png"
 }
