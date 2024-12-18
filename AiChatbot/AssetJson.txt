@@ -9,5 +9,5 @@
     "g": 0,
     "b": 0
   },
-  "textureURL": "https://example.com/your-texture.png"
+  "textureURL": "https://karthick7246.github.io/TestingData/AiChatbot/LandingPage.png"
 }
