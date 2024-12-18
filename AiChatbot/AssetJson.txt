@@ -1,8 +1,13 @@
 {
-  "color": {
-    "r": 0,
-    "g": 0,
+  "meshColor": {
+    "r": 255,
+    "g": 165,
     "b": 0
+  },
+  "imageColor": {
+    "r": 0,
+    "g": 255,
+    "b": 255
   },
   "textureURL": "https://example.com/your-texture.png"
 }
