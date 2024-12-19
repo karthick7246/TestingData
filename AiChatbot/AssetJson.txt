@@ -5,9 +5,9 @@
     "b": 71
   },
   "imageColor": {
-    "r": 145,
-    "g": 203,
-    "b": 71
+    "r": 0,
+    "g": 0,
+    "b": 0
   },
   "MainTextureUrl": "https://karthick7246.github.io/TestingData/AiChatbot/MainTexture.jpg",
   "AlbedoTextureUrl": "https://karthick7246.github.io/TestingData/AiChatbot/Albedo.jpeg",
