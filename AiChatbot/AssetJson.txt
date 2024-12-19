@@ -9,5 +9,7 @@
     "g": 0,
     "b": 0
   },
-  "textureURL": "https://karthick7246.github.io/TestingData/AiChatbot/LandingPage.png"
+  "MainTextureUrl": "https://karthick7246.github.io/TestingData/AiChatbot/MainTexture.jpg",
+  "AlbedoTextureUrl": "https://karthick7246.github.io/TestingData/AiChatbot/Albedo.jpg",
+  "ChatbotUrl": "https://ai-bot.knowyourteam.in:8009/chat_custom_global/"
 }
