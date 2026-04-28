@@ -104,10 +104,27 @@
     });
 
     player.ready(function () {
-      this.src({
-        src: 'https://karthick7246.github.io/TestingData/360VideoViewer/Test360V.mp4',
-        type: 'video/mp4'
+      const loadingOverlay = document.getElementById('loading-overlay');
+
+      player.vr({
+        projection: 'AUTO',
+        debug: false,
+        forceCardboard: false,
+        motionControls: true
       });
+
+      player.one('loadedmetadata', function () {
+        if (loadingOverlay) {
+          loadingOverlay.style.display = 'none';
+        }
+      });
+
+      player.on('error', function () {
+        if (loadingOverlay) {
+          loadingOverlay.innerHTML = 'Unable to load video. Please refresh the page.';
+        }
+      });
+    });
 
       this.vr({
         projection: 'AUTO',
