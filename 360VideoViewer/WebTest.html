@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-vr@1.10.1/dist/videojs-vr.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-vr@1.10.1/dist/videojs-vr.css">
+</head>
+<body>
+
+<video
+    id="vr-video"
+    class="video-js vjs-default-skin"
+    controls
+    preload="auto"
+    width="1000"
+    height="500">
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+</video>
+
+<script>
+    const player = videojs('vr-video');
+    player.vr({
+        projection: '360'
+    });
+</script>
+
+</body>
+</html>
