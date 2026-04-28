@@ -79,18 +79,15 @@
 
     <video
       id="vr-video"
-      class="video-js vjs-default-skin"
+      class="video-js vjs-default-skin vjs-big-play-centered"
       controls
-      playsinline
       preload="auto"
+      playsinline
+      webkit-playsinline
       crossorigin="anonymous"
       data-setup='{}'>
-      <source
-        src="https://karthick7246.github.io/TestingData/360VideoViewer/Test360V.mp4"
-        type="video/mp4" />
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript.
-      </p>
+      <source src="https://karthick7246.github.io/TestingData/360VideoViewer/Test360V.mp4" type="video/mp4" />
+      <p class="vjs-no-js">Please enable JavaScript to view this 360° video.</p>
     </video>
   </div>
 
@@ -100,11 +97,23 @@
   <script>
     const player = videojs('vr-video', {
       fluid: true,
-      controlBar: {
-        volumePanel: { inline: false },
-        fullscreenToggle: true,
-        pictureInPictureToggle: false
-      }
+      controls: true,
+      preload: 'auto',
+      autoplay: false,
+      muted: false
+    });
+
+    player.ready(function () {
+      this.src({
+        src: 'https://karthick7246.github.io/TestingData/360VideoViewer/Test360V.mp4',
+        type: 'video/mp4'
+      });
+
+      this.vr({
+        projection: 'AUTO',
+        debug: false,
+        forceCardboard: false
+      });
     });
 
     player.ready(function () {
@@ -145,5 +154,43 @@
   </script>
 </body>
 </html>
+
+<!--
+IMPLEMENTATION GUIDELINES
+
+1. Create a new project folder (for example: 360VideoViewer).
+2. Save this file as index.html in the project root.
+3. No separate JavaScript or CSS files are required; everything is self-contained.
+4. Upload the index.html file to your web server or GitHub Pages repository.
+5. The video URL is already configured to stream from:
+   https://karthick7246.github.io/TestingData/360VideoViewer/Test360V.mp4
+6. Open index.html in any modern browser:
+   - Chrome
+   - Edge
+   - Safari
+   - Firefox
+7. Controls available to users:
+   - Click and drag to look around
+   - Scroll or pinch to zoom
+   - Fullscreen toggle
+   - Play/Pause controls
+   - Mobile gyroscope support (supported devices/browsers)
+8. For production deployment, host the HTML on:
+   - GitHub Pages
+   - Cloudflare Pages
+   - AWS S3 + CloudFront
+   - Any standard web server
+9. Recommended video specifications:
+   - Format: MP4
+   - Codec: H.264
+   - Projection: Equirectangular 360
+   - Resolution: 3840x1920 or higher
+10. Optional enhancements:
+   - Add branding/logo overlay
+   - Enable autoplay (muted)
+   - Add hotspot annotations
+   - Integrate analytics
+   - Support multiple videos via playlist/gallery
+-->
 
 
